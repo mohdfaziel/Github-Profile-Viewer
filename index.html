@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Profile Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="body">
+    <div class="container">
+      <div class="search">
+        <div>
+          <h1 id="title">GitHub Profile Viewer</h1>
+        </div>
+        <div class="searchUser">
+          <input type="text" id="enterusername" placeholder="Enter Username" />
+          <input type="button" class="hvr" id="btn" value="Search" />
+        </div>
+      </div>
+      <div hidden class="result">
+        <div class="left">
+          <div class="image">
+            <img id="dp" width="100px" height="100px"
+              src="https://cdn.pixabay.com/photo/2023/06/09/08/25/ai-generated-8051238_1280.jpg" alt="" />
+          </div>
+          <h1 id="username">-</h1>
+          <p id="bio">-</p>
+        </div>
+        <div class="right">
+          <div class="details">
+            <div class="info">
+              <p>Followers</p>
+              <p id="followers">-</p>
+            </div>
+            <div class="info">
+              <p>Following</p>
+              <p id="following">-</p>
+            </div>
+            <div class="info">
+              <p>Repos</p>
+              <p id="repos">-</p>
+            </div>
+          </div>
+          <a href="" target="_blank" id="viewProfile"><button class="hvr">View Profile</button></a>
+        </div>
+      </div>
+      <div class="invalid">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"></script>
+        <dotlottie-player id="cross" src="https://lottie.host/3d370e99-e057-4614-b519-12c7effa8046/XOgsi3ugCT.json"
+          background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+          <h1>Invalid User</h1>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
