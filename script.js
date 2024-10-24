@@ -12,6 +12,7 @@ let invalid = document.getElementsByClassName("invalid")[0];
 async function Github() {
     try {
         let inputValue = input.value;
+        input.value = "";
         let p = await fetch(`https://api.github.com/users/${inputValue}`);
         let q = await p.json();
         if (q.status == "404") {
