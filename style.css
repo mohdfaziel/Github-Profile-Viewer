@@ -11,10 +11,15 @@
     font-family: "Poppins";
     transition: all 0.2s ease;
 }
+body{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
 .body{
     padding: 10px;
     background-color:var(--primary); 
-    min-width: 100vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
